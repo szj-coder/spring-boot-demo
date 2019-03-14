@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://106.14.191.112:3307/MyBlog
+    username: root
+    password: 514root
+
+server:
+  port: 8636
+  tomcat:
+    uri-encoding: utf-8
+
+
+
+# mybatis
+#mybatis:
+#  mapper-locations: classpath:com/test/demo/dao/basexml/*.xml
+#  configuration:
+#    map-underscore-to-camel-case: true
+#  config-location: classpath:mybatis-config.xml
+#  type-aliases-package: com.test.demo.model
+
+#logger
+logging:
+  file:
+    max-size: 10MB
+  level:
+    root: debug
+
+
+mybatis:
+  mapper-locations: classpath:**/dao/basexml/*Mapper.xml
+  type-aliases-package: com.test.demo.model
+
