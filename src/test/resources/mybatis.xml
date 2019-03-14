@@ -50,6 +50,17 @@
         <property name="beginningDelimiter" value="`"/>
         <property name="endingDelimiter" value="`"/>
 
+        <!--Java类注释配置,-->
+        <!--https://segmentfault.com/a/1190000016525887-->
+        <commentGenerator>
+            <!--是否不生成注释-->
+            <property name="suppressAllComments" value="false"/>
+            <!--是否不生成日期-->
+            <property name="suppressDate" value="true"/>
+            <!--是否添加数据库内的注释-->
+            <property name="addRemarkComments" value="false"/>
+        </commentGenerator>
+
         <!-- 必须要有的，使用这个配置链接数据库
             @TODO:是否可以扩展
          -->

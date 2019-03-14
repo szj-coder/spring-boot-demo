@@ -29,7 +29,7 @@ public class TestServerTest {
             List<SysLog> sysLogs = sysLogServer.selectAll();
             System.out.println(JSONObject.toJSONString(sysLogs));
         } catch (Exception e) {
-            log.error(e.getMessage(), e);
+            log.info(e.getMessage(), e);
         }
     }
 }
