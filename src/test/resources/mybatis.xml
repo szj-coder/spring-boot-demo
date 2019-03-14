@@ -12,7 +12,8 @@
         另外，如果使用了mybatis-generator-maven-plugin，那么在pom.xml中定义的properties都可以直接在generatorConfig.xml中使用
     <properties resource="" url="" />
      -->
-    <properties resource="mybatis.properties"/>
+    <!--<properties resource="mybatis.properties"/>-->
+    <properties url="file:///D:/Desktop/test/src/test/resources/mybatis.properties"/>
 
 
     <!-- 在MBG工作的时候，需要额外加载的依赖包

@@ -12,6 +12,7 @@ import java.util.List;
 
 /**
  * 测试server
+ *
  * @author szj
  */
 @Service
@@ -24,19 +25,19 @@ public class SysLogServer {
     public List<SysLog> selectAll() {
         try {
             List<SysLog> sysLogList = sysLogMapper.getAll();
-            logger.info(JSONObject.toJSONString(sysLogList));
+            logger.info("1" + JSONObject.toJSONString(sysLogList));
         } catch (Exception e) {
             logger.error(e.getMessage(), e);
         }
         try {
             List<SysLog> sysList = sysLogMapper.all();
-            logger.info(JSONObject.toJSONString(sysList));
+            logger.info("2" + JSONObject.toJSONString(sysList));
         } catch (Exception e) {
             logger.error(e.getMessage(), e);
         }
         try {
             List<SysLog> sysLogs = sysLogMapper.selectAll();
-            logger.info(JSONObject.toJSONString(sysLogs));
+            logger.info("3" + JSONObject.toJSONString(sysLogs));
         } catch (Exception e) {
             logger.error(e.getMessage(), e);
         }

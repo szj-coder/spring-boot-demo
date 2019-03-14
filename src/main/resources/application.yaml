@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://106.14.191.112:3307/MyBlog
+    url: jdbc:mysql://106.14.191.112:3307/MyBlog?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     username: root
     password: 514root
 
@@ -25,10 +25,10 @@ logging:
   file:
     max-size: 10MB
   level:
-    root: debug
+    root: info
 
 
 mybatis:
-  mapper-locations: classpath:**/dao/basexml/*Mapper.xml
+  mapper-locations: classpath:com/test/demo/dao/basexml/*.xml
   type-aliases-package: com.test.demo.model
 
