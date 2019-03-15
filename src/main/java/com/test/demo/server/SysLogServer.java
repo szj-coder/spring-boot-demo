@@ -23,18 +23,7 @@ public class SysLogServer {
     private SysLogMapper sysLogMapper;
 
     public List<SysLog> selectAll() {
-        try {
-            List<SysLog> sysLogList = sysLogMapper.getAll();
-            logger.info("1" + JSONObject.toJSONString(sysLogList));
-        } catch (Exception e) {
-            logger.error(e.getMessage(), e);
-        }
-        try {
-            List<SysLog> sysList = sysLogMapper.all();
-            logger.info("2" + JSONObject.toJSONString(sysList));
-        } catch (Exception e) {
-            logger.error(e.getMessage(), e);
-        }
+
         try {
             List<SysLog> sysLogs = sysLogMapper.selectAll();
             logger.info("3" + JSONObject.toJSONString(sysLogs));
@@ -43,6 +32,14 @@ public class SysLogServer {
         }
         return sysLogMapper.selectAll();
 
+    }
+
+    public List<SysLog> all() {
+        return sysLogMapper.all();
+    }
+
+    public List<SysLog> getAll() {
+        return sysLogMapper.getAll();
     }
 
 }

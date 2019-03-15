@@ -28,7 +28,10 @@ logging:
     root: info
 
 
+# map-underscore-to-camel-case-case 驼峰转换
 mybatis:
   mapper-locations: classpath:com/test/demo/dao/basexml/*.xml
   type-aliases-package: com.test.demo.model
+  configuration:
+    map-underscore-to-camel-case: true
 

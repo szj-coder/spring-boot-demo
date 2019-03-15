@@ -8,7 +8,6 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-@Configuration
 @MapperScan("com.test.demo.*.*")
 @SpringBootApplication
 public class DemoApplication {

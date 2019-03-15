@@ -34,7 +34,7 @@
     from sys_log
   </select>
 
-  <select id="all" resultType="com.test.demo.model.SysLog">
+  <select id="all" resultType="com.test.demo.model.SysLog" resultMap="BaseResultMap">
     SELECT * FROM sys_log
   </select>
 </mapper>
