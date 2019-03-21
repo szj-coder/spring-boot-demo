@@ -19,7 +19,7 @@ public class BaseController {
         return jsonObject.toJSONString();
     }
 
-    protected String successReture(Object data) {
+    protected String successReturn(Object data) {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("code", 200);
 

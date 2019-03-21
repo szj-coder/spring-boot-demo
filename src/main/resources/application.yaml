@@ -12,14 +12,6 @@ server:
 
 
 
-# mybatis
-#mybatis:
-#  mapper-locations: classpath:com/test/demo/dao/basexml/*.xml
-#  configuration:
-#    map-underscore-to-camel-case: true
-#  config-location: classpath:mybatis-config.xml
-#  type-aliases-package: com.test.demo.model
-
 #logger
 logging:
   file:

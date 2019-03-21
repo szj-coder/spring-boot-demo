@@ -42,4 +42,12 @@ public class SysLogServer {
         return sysLogMapper.getAll();
     }
 
+    public List<SysLog> accessLogin(Integer num) {
+        if (null == num) {
+            num = 5;
+        }
+        return sysLogMapper.accessLog(num);
+    }
+
+
 }

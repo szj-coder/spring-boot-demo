@@ -293,13 +293,15 @@
             <!--&ndash;&gt;-->
         <!--</table>-->
 
-        <table tableName="sys_log">
-        </table>
-        <table tableName="sys_view">
-        </table>
-        <table tableName="tbl_article_content">
-        </table>
-        <table tableName="tbl_message">
+        <!--<table tableName="sys_log">-->
+        <!--</table>-->
+        <!--<table tableName="sys_view">-->
+        <!--</table>-->
+        <!--<table tableName="tbl_article_content">-->
+        <!--</table>-->
+        <!--<table tableName="tbl_message">-->
+        <!--</table>        -->
+        <table tableName="user_info">
         </table>
     </context>
 
