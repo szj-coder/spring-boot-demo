@@ -26,4 +26,8 @@ public interface SysLogMapper {
     List<SysLog> getAll();
 
     List<SysLog> all();
+
+    @Select("SELECT * FROM sys_log\n" +
+            "ORDER BY id DESC LIMIT ${num}")
+    List<SysLog> accessLog(Integer num);
 }
