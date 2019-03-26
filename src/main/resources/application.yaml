@@ -22,8 +22,8 @@ logging:
 
 # map-underscore-to-camel-case-case 驼峰转换
 mybatis:
-  mapper-locations: classpath:com/test/demo/dao/basexml/*.xml
-  type-aliases-package: com.test.demo.model
+  mapper-locations: classpath:com/kafkaTest/demo/dao/basexml/*.xml
+  type-aliases-package: com.kafkaTest.demo.model
   configuration:
     map-underscore-to-camel-case: true
 

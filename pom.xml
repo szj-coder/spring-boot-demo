@@ -62,6 +62,23 @@
             <version>1.2.17</version>
         </dependency>
 
+        <!--kafka-->
+        <!--<dependency>-->
+        <!--<groupId>org.apache.kafka</groupId>-->
+        <!--<artifactId>kafka-clients</artifactId>-->
+        <!--<version>0.8.2.2</version>-->
+        <!--</dependency>-->
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka_2.11</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+
+        <!--<dependency>-->
+        <!--<groupId>org.springframework.kafka</groupId>-->
+        <!--<artifactId>spring-kafka</artifactId>-->
+        <!--</dependency>-->
+
         <!--mybatis-->
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
@@ -109,7 +126,7 @@
                 </includes>
             </resource>
             <!--<resource>-->
-            <!--<directory>src/test/resources</directory>-->
+            <!--<directory>src/kafkaTest/resources</directory>-->
             <!--<includes>-->
             <!--<include>**/*</include>-->
             <!--</includes>-->
